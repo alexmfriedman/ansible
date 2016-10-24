@@ -1,5 +1,14 @@
 # ansible
 
+This is intended to be used as a submodule within other projects. When cloning a repository to which this is a submodule, run
+```
+$ git clone --recursive <URL>
+```
+when cloning the repo, or run
+```
+$ git submodule update --init --recursive
+```
+from within the repo after cloning.
 
 ## Ansible Installation
 ```
@@ -38,10 +47,12 @@ Once this is set up, you can simulate our website on your local machine. Open th
 We have already configured the necessary vagrant machines. However, if you wish to add your own, you may do the following.
 
 Installing Vagrant and Virtual Box:
-www.vagrantup.com
-virtualbox.org
 
-Go to vagrantcloud.com to find boxes.
+[www.vagrantup.com](www.vagrantup.com)
+
+[virtualbox.org](virtualbox.org)
+
+Go to vagrantcloud.com [vagrantcloud.com](vagrantcloud.com) to find boxes.
 
 ```
 $ vagrant box add <box_name>
@@ -54,4 +65,4 @@ $ vagrant init <box_name>
 $ vagrant up <box_name>
 ```
 
-For additional information on vagrant machines see [this page](https://www.vagrantup.com/docs/).
+For additional information on vagrant machines see [https://www.vagrantup.com/docs/](https://www.vagrantup.com/docs/).
